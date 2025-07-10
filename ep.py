@@ -5,20 +5,27 @@
 
 
 def minimo(arr):
-    # retorna o menor valor do array
-    return min(arr)
+    menor = arr[0]
 
-def maximo(arr):
-    if not array:
-        raise ValueError("o array estah vazio!")
-    
-    maior = arr[0]
-
-    for elemento in range [1:]:
+    for elemento in arr[1:]:
         if elemento < menor:
             menor = elemento
 
-    return menor
+
+
+
+
+    return menor 
+
+def maximo(arr):
+
+    maior = arr[0]
+
+    for elemento in arr[1:]:
+        if elemento > maior:
+            maior = elemento
+
+    return maior
 
     
 
