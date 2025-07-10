@@ -9,8 +9,18 @@ def minimo(arr):
     return min(arr)
 
 def maximo(arr):
-    # retorna o maior valor do array
-    return
+    if not array:
+        raise ValueError("o array estah vazio!")
+    
+    maior = arr[0]
+
+    for elemento in range [1:]:
+        if elemento < menor:
+            menor = elemento
+
+    return menor
+
+    
 
 def meio(arr):
     # retorna o valor exatamente ao meio do array
