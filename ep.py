@@ -34,8 +34,13 @@ def meio(arr):
     return arr[len(arr) // 2]
 
 def media(arr):
-    # retorna a media dos valores do array
-    return
+    
+    soma = 0
+
+    for x in range(0, len(arr)):
+        soma = soma + arr[x]
+
+    return soma / len(arr)
 
 def moda(arr):
     # retorna o valor que mais se repete no array
@@ -46,7 +51,7 @@ def soma(arr, n = 1):
     # exemplo
     # entrada: arr = [1, 1, 1], n = 5
     # saida: arr = [6, 6, 6]
-    return
+    return 
 
 def subtracao(arr, n):
     # subtrai n em todos os valores do array e retorna o novo array
