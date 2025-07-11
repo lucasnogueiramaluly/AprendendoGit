@@ -43,8 +43,36 @@ def media(arr):
     return soma / len(arr)
 
 def moda(arr):
-    # retorna o valor que mais se repete no array
-    return
+    
+    frequencia = []
+    
+    
+
+    for x in range(0, len(arr)):
+        elemento = arr[x]
+        contagem = 0
+
+        for y in range (0, len(arr)):
+            if arr[y] == arr[x]:
+                contagem = contagem +1
+
+        frequencia.append(contagem)
+
+
+    maior = 0
+    for x in range (1, len(frequencia)):
+        if frequencia[x] > maior:
+            maior = x
+        
+
+        
+    
+
+
+
+
+
+    return arr[maior]
 
 def soma(arr, n = 1):
     # soma n a todos os valores do array e retorna o novo array
